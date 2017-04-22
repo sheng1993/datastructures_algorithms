@@ -3,18 +3,20 @@ import sys
 import random
 
 def partition3(a, l, r):
-    x = a[l]
-    j = l
-    k = l
-    for i in range(l + 1, r + 1):
-        if a[i] < x:
-            j += 1
-            k += 1
-            a[i], a[j] = a[j], a[i]
-        elif a[i] == x:
-            k += 1
-    a[l], a[j] = a[j], a[l]
-    return j, k
+   x, j, t = a[l], l, r
+   i = j
+
+   while i <= t :
+      if a[i] < x:
+         a[j], a[i] = a[i], a[j]
+         j += 1
+
+      elif a[i] > x:
+         a[t], a[i] = a[i], a[t]
+         t -= 1
+         i -= 1 # remain in the same i in this case
+      i += 1
+   return j, t
 
 
 def partition2(a, l, r):
