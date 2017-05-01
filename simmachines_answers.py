@@ -13,14 +13,15 @@ Answer #2 something amazing you have done outside a computer:   N/A
 
 
 
-Answer #3 friendship paradox:   N/A
+Answer #3 friendship paradox:   N/A - *Investigated: Most people have less friends than their own friends
+                                        because people with more friends are more likely to be counted as
+                                        one of your friends.
 
 
 
 Answer #4:
     The expected percentage would be ~50% for girls and boys
 '''
-
 
 
 '''SECOND ROUND'''
@@ -164,7 +165,7 @@ def get_majority_element(a):
 
 
 '''Final Section
-Answers taken from simmachines.ipynb
+Answers progress in file: simmachines.ipynb
 
 - Answer A. Top 10 users that have listened to 'The beatles'
 
