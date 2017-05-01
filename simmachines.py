@@ -7,7 +7,21 @@ Answer #1- What do you think being a data scientist means?
     I would like to become one because many things we use in our life(technologies)
     uses machine learning and it is a field I really like and enjoy, and it would be
     exciting to work in it.
+
+
+Answer #2 something amazing you have done outside a computer:   N/A
+
+
+
+Answer #3 friendship paradox:   N/A
+
+
+
+Answer #4:
+    The expected percentage would be ~50% for girls and boys
 '''
+
+
 
 '''SECOND ROUND'''
 
@@ -126,6 +140,8 @@ def get_longest_decreasing_subsequence(arr):
     return m, n
 
 
+'''Fourth Round'''
+
 '''
 Answer #17
 Majority element
@@ -145,6 +161,24 @@ def get_majority_element(a):
             ele = i
             cont = 1
     return a[ele]
+
+
+'''Final Section
+Answers taken from simmachines.ipynb
+
+- Answer A. Top 10 users that have listened to 'The beatles'
+
+['0033ee7378661b88b245b1f67cc622ff63a51061', '0c4541503dd8f5b067976f40edc09d8c2a2322a4', 
+'0de2759e5b8d1abb6fb7604230c07970da79ee8e', '03e7b02c10f651675001a268c6aae38f1668cee2', 
+'0954e77dc1dafca788709611f895d270cfdfa5c8', '0d9f98701431e4c005ab76a472c28a274c21b015', 
+'0481c9623e27a7d3f236440261d77d7753353f21', '0715e4b972ab477545ea2093a91f7fcb71420c4d', 
+'01e19917350af651576cba8c7b4158ce389ae319', '0c4e5f8252f31afbf7270c42ceedeec36e7b54e0']
+
+
+-Answer B. The most popular band: 'the beatles'
+
+-Answer C. N/A
+'''
 
 
 if __name__ == '__main__':
