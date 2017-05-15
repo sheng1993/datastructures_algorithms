@@ -33,7 +33,7 @@ def union(i, j):
     else:
         parent[i_id] = j_id
         if rank[i_id] == rank[j_id]:
-            rank[j_id] = rank[j_id] + 1
+            rank[j_id] += 1
 
 
 if __name__ == '__main__':

@@ -74,6 +74,13 @@ def pre_compute_hashes(t, l_pattern, p, x):
 
 
 def rabin_karp(text, pattern):
+    """
+    Average running time O(|T| + (q+1)|P|)
+    Usually q is small, so this is much less than O(|T||P|)
+    :param text:
+    :param pattern:
+    :return:
+    """
     l_text = len(text)
     l_pattern = len(pattern)
     p = next_prime(l_text * l_pattern)
