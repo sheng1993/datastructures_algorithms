@@ -2,8 +2,14 @@ import math
 from heapq import heappush, heappop
 from utility.graphs import Graph, Vertex
 
-'''Dijkstra Algorithm'''
+
 def dijkstra(G: Graph, S: int):
+    """Dijkstra Algorithm
+    Running time: O((|E| + |V|)log|V|)
+    :param G:
+    :param S:
+    :return:
+    """
     dist = {}   # type: dict
     prev = {}   # type: dict
     queue = []
