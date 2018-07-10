@@ -19,3 +19,35 @@ def to_graphviz(g: dict, cc: dict, prev: dict, post: dict, dir='none', copy=True
         print('Graphviz source copied to clipboard.')
 
     return dot.source
+
+
+class disjointset:
+    def __init__(self, *args, **kwargs):
+        self.parents = dict()
+        self.ranks = dict()
+
+    def __contains__(self, v):
+        return v in self.parents
+    
+    def add(self, value):
+        self.parents[value] = value
+        self.ranks[value] = 1
+    
+    def find(self, value):
+        if value != self.parents[value]:
+            self.parents[value] = self.find(self.parents[value])
+        return self.parents[value]
+    
+    def union(self, value1, value2):
+        _v1 = self.find(value1)
+        _v2 = self.find(value2)
+
+        if _v1 == _v2:
+            return
+        
+        if self.ranks[_v1] > self.ranks[_v2]:
+            self.parents[_v2] = _v1
+        else:
+            self.parents[_v1] = _v2
+            if self.ranks[_v1] == self.ranks[_v2]:
+                self.ranks[_v2] += 1

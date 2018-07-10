@@ -42,6 +42,5 @@ def find_all_occurrences(p, t):
     return result
 
 
-if __name__ == '__main__':
-    print(compute_prefix_function('abababcaab'))
-    print(find_all_occurrences('aba', 'abababcaab'))
+print(compute_prefix_function('abababcaab'))
+print(find_all_occurrences('aba', 'abababcaab'))

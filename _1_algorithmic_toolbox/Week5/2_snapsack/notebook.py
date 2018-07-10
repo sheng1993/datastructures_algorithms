@@ -77,4 +77,4 @@ def knapsack_without_repetition(W, weights, v):
 if __name__ == '__main__':
     print(knapsack_repetition(10, [6,3,4,2], [30,14,16,9]))
     print(knapsack_with_repetition_recursive(10, [6,3,4,2], [30,14,16,9]))
-    # knapsack_without_repetition(10, [6, 3, 4, 2], [30, 14, 16, 9])
+    knapsack_without_repetition(10, [6, 3, 4, 2], [30, 14, 16, 9])
